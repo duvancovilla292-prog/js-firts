@@ -71,23 +71,23 @@
 //console.log(tecnologias.pop());  // Elimina el último elemento ("React")
 //console.log(tecnologias.map(tecnologia => tecnologia.toUpperCase()));  // ["HTML", "CSS", "JAVASCRIPT"]
 
-const objeto = {
-    nombre: "Ciel",
-    apellido: "Covilla",
-    edad: 18,
-    esEstudiante: true
-};
-console.log(objeto);
-console.log(typeof objeto);
-console.log(objeto.nombre);
-console.log(objeto.apellido);
-console.log(objeto.edad);
-console.log(objeto.esEstudiante);
-console.log(objeto["nombre"]);
-console.log(objeto["apellido"]);
-console.log(objeto["edad"]);
-console.log(objeto["esEstudiante"]);
-
+//const objeto = {
+//    nombre: "Ciel",
+//    apellido: "Covilla",
+//    edad: 18,
+//    esEstudiante: true
+//};
+//console.log(objeto);
+//console.log(typeof objeto);
+//console.log(objeto.nombre);
+//console.log(objeto.apellido);
+//console.log(objeto.edad);
+//console.log(objeto.esEstudiante);
+//console.log(objeto["nombre"]);
+//console.log(objeto["apellido"]);
+//console.log(objeto["edad"]);
+//console.log(objeto["esEstudiante"]);
+//
 
 //======================
 
@@ -108,7 +108,11 @@ switch (operacion) {
     resultado = num1 * num2;
     break;
   case "/":
-    resultado = num2 !== 0 ? num1 / num2 : "Error: División por cero";
+    if (num2 !== 0) {
+      resultado = num1 / num2;
+    } else {
+      resultado = "Error: División por cero";
+    }
     break;
   default:
     resultado = "Operación no válida";
@@ -162,6 +166,9 @@ console.log(`Contiene palabra clave gamer: ${tienePalabraClave}`);
 console.log(`Primera categoría: ${primeraCategoria}`);
 console.log(`Cantidad total de categorías: ${totalCategorias}`);
 
-if (total >= 200000 && disponible === true) {
+if (total >= 300000 && disponible === true) {
     console.log("Aplica envío gratis");
+}
+else{
+    console.log("No aplica envío gratis");
 }
