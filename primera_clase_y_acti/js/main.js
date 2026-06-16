@@ -113,6 +113,7 @@ switch (operacion) {
     } else {
       resultado = "Error: División por cero";
     }
+    //resultado = num2 !== 0 ? num1 / num2 : "Error: División por cero";
     break;
   default:
     resultado = "Operación no válida";
