@@ -117,3 +117,51 @@ switch (operacion) {
 console.log(`Resultado: ${resultado}`);
 
 //================================
+const nombreOriginal = "   teclado gamer   "; 
+const precio = 120000;
+const cantidad = 2;
+const descuento = 10000;
+const disponible = true;
+
+const nombreLimpio = nombreOriginal.trim();
+const nombreMayusculas = nombreLimpio.toUpperCase();
+const tienePalabraClave = nombreLimpio.toLowerCase().includes("gamer");
+
+const categorias = ["Periféricos", "Gaming", "Accesorios"];
+const primeraCategoria = categorias[0];
+const totalCategorias = categorias.length;
+
+const producto = {
+    nombre: nombreMayusculas,
+    precio: precio,
+    cantidad: cantidad,
+    disponible: disponible,
+    categorias: categorias
+};
+
+function calcularSubtotal(precioUnitario, cantidadComprada) {
+    return precioUnitario * cantidadComprada;
+}
+
+function calcularTotalFinal(subtotalValor, descuentoValor) {
+    return subtotalValor - descuentoValor;
+}
+
+const subtotal = calcularSubtotal(precio, cantidad);
+const total = calcularTotalFinal(subtotal, descuento);
+
+console.log(`Producto: ${producto.nombre}`);
+console.log(`Precio unitario: ${producto.precio}`);
+console.log(`Cantidad: ${producto.cantidad}`);
+console.log(`Subtotal: ${subtotal}`);
+console.log(`Descuento: ${descuento}`);
+console.log(`Total a pagar: ${total}`);
+console.log(`Producto disponible: ${producto.disponible}`);
+console.log(`Contiene palabra clave gamer: ${tienePalabraClave}`);
+
+console.log(`Primera categoría: ${primeraCategoria}`);
+console.log(`Cantidad total de categorías: ${totalCategorias}`);
+
+if (total >= 200000 && disponible === true) {
+    console.log("Aplica envío gratis");
+}
