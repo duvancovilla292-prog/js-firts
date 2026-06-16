@@ -162,3 +162,6 @@ console.log(`Contiene palabra clave gamer: ${tienePalabraClave}`);
 console.log(`Primera categoría: ${primeraCategoria}`);
 console.log(`Cantidad total de categorías: ${totalCategorias}`);
 
+if (total >= 200000 && disponible === true) {
+    console.log("Aplica envío gratis");
+}
