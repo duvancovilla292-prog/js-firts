@@ -1,0 +1,11 @@
+section{
+    background-color: aqua;
+    color: azure;
+    border-radius: 20px;
+    padding: 20px;
+}
+button{
+    background-color: rgb(151, 151, 243);
+    color: white;
+    border-radius: 20px;
+}
