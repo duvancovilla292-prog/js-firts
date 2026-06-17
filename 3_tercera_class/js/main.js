@@ -1,23 +1,23 @@
 
 const persona = {
-    nombre: "Ciel",
-    edad: 30,
-    ciudad: "Cucuta",
-    esEstudiante: false,
-    
-    saludar: function() {
-      return `Hola, mi nombre es ${this.nombre} Tengo ${this.edad} años y vivo en ${this.ciudad}.`;
-    },
-    saludar2: function() {
-        return `Hola, mi nombre es `+ this.nombre + " Tengo " + this.edad + ` años y vivo en ` + this.ciudad + `.`;
-    }
-  };
+  nombre: "Ciel",
+  edad: 30,
+  ciudad: "Cucuta",
+  esEstudiante: false,
 
-  console.log(persona.nombre); 
-  console.log(persona["edad"]); 
-  console.log(persona.saludar());
-  console.log(persona.saludar2()); 
-  console.log(this);
+  saludar: function () {
+    return `Hola, mi nombre es ${this.nombre} Tengo ${this.edad} años y vivo en ${this.ciudad}.`;
+  },
+  saludar2: function () {
+    return `Hola, mi nombre es ` + this.nombre + " Tengo " + this.edad + ` años y vivo en ` + this.ciudad + `.`;
+  }
+};
+
+console.log(persona.nombre);
+console.log(persona["edad"]);
+console.log(persona.saludar());
+console.log(persona.saludar2());
+console.log(this);
 
 console.log("----------------------------");
 json = JSON.stringify(persona);
@@ -52,10 +52,10 @@ console.log(nombre);
 console.log("----------------------------");
 
 const system = {
-    so: "LINUX",
-    software: "tech",
-    ...usuario
-  };
+  so: "LINUX",
+  software: "tech",
+  ...usuario
+};
 console.log(system);
 
 // Manipulación
@@ -78,3 +78,15 @@ const total = precios.reduce((acumulador, precio) => acumulador + precio, 0); //
 console.log(total);
 
 console.log(precios.includes(20000)); // includes() verifica si un elemento existe en el arreglo
+
+console.log("-----------------------------------");
+const listSet = new Set([1, 2, 3, 4]);
+console.log(listSet);
+listSet.add(4);
+console.log(listSet)
+console.log(notaSet)
+
+const map = new Map();
+Map.set("nombre", "javier");
+Map.set("edad", 18);
+console.log(map)
