@@ -57,3 +57,24 @@ const system = {
     ...usuario
   };
 console.log(system);
+
+// Manipulación
+const notas = [3.5, 4.2, 2.8, 5.0];
+console.log(notas[0]); // 3.5
+console.log(notas[1]); // 4.2
+notas.push(4); // push() agrega un nuevo elemento al final del arreglo.
+console.log(notas);
+notas.pop(); // pop() elimina el último elemento del arreglo.
+console.log(notas);
+
+const precios = [10000, 20000, 30000];
+const preciosConIva = precios.map(precio => precio * 1.19); // map() recorre el arreglo y transforma cada elemento en algo nuevo.
+console.log(preciosConIva);
+
+const mayoresA20000 = preciosConIva.filter(preciosConIva => preciosConIva > 20000); // filter() crea un nuevo arreglo solo con los elementos que cumplen...
+console.log(mayoresA20000);
+
+const total = precios.reduce((acumulador, precio) => acumulador + precio, 0); // reduce(): resumir todo en un solo resultado
+console.log(total);
+
+console.log(precios.includes(20000)); // includes() verifica si un elemento existe en el arreglo
