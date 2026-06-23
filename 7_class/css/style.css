@@ -1,0 +1,69 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #333;
+    margin: 0;
+    padding: 40px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    border-radius: 30px; 
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0b5ed7; 
+}
+
+#contenedor-productos {
+    border: 1px dashed #b0b0b0;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+.producto {
+    background-color: #e0f2fe; 
+    color: #1e293b;
+    padding: 18px 25px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    border-left: 5px solid #0284c7;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+.mensaje {
+    background-color: #fef08a; 
+    color: #854d0e;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    margin: 10px 0;
+    display: inline-block;
+}
