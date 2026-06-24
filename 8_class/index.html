@@ -9,11 +9,84 @@
 </head>
 
 <body>
-
+<!-- esto es una comentario -->
     <main>
         <header>
             <h1>JavaScript: sesion 8 - Labs</h1>
         </header>
+        <section>
+        <button onclick="saludarDesdeHTML()">
+            Saludar con HTML
+        </button>
+        <p id="mensajeHTML"></p>
+
+        <button id="btnPropiedad">
+            Saludar con onclick
+        </button>
+        <p id="mensajePropiedad"></p>
+        <button id="btnListener">
+            Saludar con addEventListener
+        </button>
+        <p id="mensajeListener"></p>
+        </section>
+        <section class="contenedor-practica">
+            <h2>Laboratorio de Eventos Domésticos</h2>
+          
+            <div class="bloque">
+              <button id="btn-click">¡Hazme clic!</button>
+              <p id="txt-click">Esperando clic...</p>
+            </div>
+          
+            <div class="bloque">
+              <form id="mi-formulario">
+                <input type="text" id="input-submit" placeholder="Escribe algo y presiona Enter" required>
+                <button type="submit">Enviar</button>
+              </form>
+              <p id="txt-submit"></p>
+            </div>
+          
+            <div class="bloque">
+              <input type="text" id="input-realtime" placeholder="Escribe aquí (Tiempo real)...">
+              <p id="txt-realtime">Esperando que escribas...</p>
+            </div>
+          
+            <div class="bloque">
+              <select id="mi-select">
+                <option value="">-- Elige un color --</option>
+                <option value="🔴 Rojo">Rojo</option>
+                <option value="🔵 Azul">Azul</option>
+                <option value="🟢 Verde">Verde</option>
+              </select>
+              <p id="txt-change"></p>
+            </div>
+          
+            <div class="bloque">
+              <input type="text" id="input-tecla" placeholder="Presiona cualquier tecla aquí...">
+              <p id="txt-tecla"></p>
+            </div>
+          
+            <div class="bloque">
+              <div id="caja-mouse" class="caja-interactiva">Pasa el mouse por aquí</div>
+            </div>
+          </section>
+          <section>
+            <button id="hola" class="ESTA-ES-LA-CLASE">hola</button>
+          </section>
+          <section id="seccion-3">
+            <form id="formulario">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="txt"></p>
+          </section>
+          <section>
+            <div>
+                <h2>Usuarios registrados</h2>
+                <ul id="listaUsuarios"></ul>
+             </div>
+          </section>
     </main>
 
 
