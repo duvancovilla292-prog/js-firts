@@ -9,11 +9,31 @@
 </head>
 
 <body>
+    <header>
+        <h1>JavaScript: sesion 9 - Labs</h1>
+        <h1>Ejemplo de Web Component</h1>
+        <h2>
+            <mi-saludo></mi-saludo>
+        </h2>
+    </header>
 
     <main>
-        <header>
-            <h1>JavaScript: sesion 9 - Labs</h1>
-        </header>
+        <tarjeta-messi></tarjeta-messi>
+        <section>
+            <h2>Ejemplo de Shadow DOM</h2>
+            <p>Este párrafo está fuera del componente.</p>
+            <shadow-tarjeta></shadow-tarjeta>
+          </section>
+
+          <template id="template-producto">
+            <article class="card">
+              <h3 class="nombre"></h3>
+              <p class="precio"></p>
+            </article>
+          </template>
+          <section id="contenedor-productos">
+            <h2> ejemplo con templace htmll</h2>
+          </section>
     </main>
 
 
