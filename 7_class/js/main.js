@@ -45,7 +45,7 @@ btnRemove.addEventListener("click", function () {
 
     if (primerProducto) {
         primerProducto.remove();//el .remove() es un método que elimina un nodo del árbol DOM, en este caso se elimina el primer elemento con la clase "producto" del contenedor de productos.
-    } else {
+    } else {//LA DIFERENCIA ENTRE .remove() y .removeChild() es que el primero se llama directamente sobre el nodo que se desea eliminar, mientras que el segundo se llama sobre el nodo padre del nodo que se desea eliminar. Además, .remove() no requiere un argumento, mientras que .removeChild() requiere el nodo hijo que se desea eliminar como argumento.
         console.warn("No hay productos para eliminar");//el .warn() es un método que muestra un mensaje de advertencia en la consola del navegador, en este caso se muestra un mensaje indicando que no hay productos para eliminar.
     }
 });
