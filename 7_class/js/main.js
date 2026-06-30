@@ -20,7 +20,7 @@ btnPrepend.addEventListener("click", function () {
     producto.classList.add("producto");
     contenedorProductos.prepend(producto);// el .prepend() es un método que inserta un nodo al inicio de la lista de hijos de un elemento, en este caso se agrega el elemento <article> al inicio del contenedor de productos.
 });//el .prepend() es similar al .append(), pero en lugar de agregar el nodo al final, lo agrega al inicio de la lista de hijos del elemento.
-
+// el .append() es similar al .appendChild(), pero el primero puede agregar varios nodos o cadenas de texto, mientras que el segundo solo puede agregar un nodo. Además, el .append() no devuelve ningún valor, mientras que el .appendChild() devuelve el nodo agregado.
 
 btnBefore.addEventListener("click", function () {
     const mensaje = document.createElement("p");
